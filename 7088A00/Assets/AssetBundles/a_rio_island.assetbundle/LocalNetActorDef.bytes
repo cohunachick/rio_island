@@ -1,0 +1,1005 @@
+{
+	"always_on": 
+		{
+			"r": "create_actors",
+			"actor_data": 
+				[
+					{
+						"actor_id": "DoorSwing_02",
+						"components": 
+							[
+								{
+									"type": "volume_trigger",
+									"volume_data": 
+										[
+											{
+												"collision_type": "box",
+												"center": 
+													[
+														-2.98642087,
+														3.94,
+														3.757212
+													],
+												"extents": 
+													[
+														5.3006773,
+														2.45232987,
+														3.94949079
+													],
+												"rotation": 
+													[
+														0,
+														0,
+														0
+													]
+											}
+										],
+									"trigger_type": "local"
+								},
+								{
+									"type": "net_actor_node",
+									"inputs": 
+										[
+											{
+												"input_port": "on",
+												"actions": 
+													[
+														{
+															"a": "model_animation",
+															"r": 
+																[
+																	0,
+																	0,
+																	0
+																],
+															"o": 
+																[
+																	0,
+																	0,
+																	0
+																],
+															"uid": "local",
+															"p": 
+																{
+																	"name": "DoorSwing_02_On",
+																	"wrap_mode": "once",
+																	"switch_method": "queue",
+																	"wait_method": "none"
+																}
+														}
+													]
+											},
+											{
+												"input_port": "off",
+												"actions": 
+													[
+														{
+															"a": "model_animation",
+															"r": 
+																[
+																	0,
+																	0,
+																	0
+																],
+															"o": 
+																[
+																	0,
+																	0,
+																	0
+																],
+															"uid": "local",
+															"p": 
+																{
+																	"name": "DoorSwing_02_Off",
+																	"wrap_mode": "once",
+																	"switch_method": "queue",
+																	"wait_method": "none"
+																}
+														}
+													]
+											}
+										],
+									"outputs": 
+										[
+											{
+												"output_port": "volume_trigger_enter_first",
+												"cooldown": 2,
+												"output_port_data": 
+													[
+														{
+															"type": "local_wiring",
+															"actor_id": "DoorSwing_02",
+															"input_port": "on"
+														}
+													],
+												"restricted_types": 
+													[
+														"avakin",
+														"petkin"
+													]
+											},
+											{
+												"output_port": "volume_trigger_exit_all",
+												"cooldown": 2,
+												"output_port_data": 
+													[
+														{
+															"type": "local_wiring",
+															"actor_id": "DoorSwing_02",
+															"input_port": "off"
+														}
+													],
+												"restricted_types": 
+													[
+														"avakin",
+														"petkin"
+													]
+											}
+										]
+								},
+								{
+									"type": "model",
+									"version": 1,
+									"game_asset_url": "sceneref://AlwaysOn/Nodes/DoorsTriggers/DoorSwing_02",
+									"edit_apartment_animation": "DoorSwing_02_On",
+									"idle_animation": "DoorSwing_02_Off",
+									"idle_wrap_mode": "last_frame"
+								}
+							],
+						"actions": 
+							[
+								{
+									"a": "position",
+									"o": 
+										[
+											0,
+											0,
+											0
+										],
+									"uid": "local"
+								},
+								{
+									"a": "model_set_visible",
+									"uid": "local",
+									"p": 
+										{
+											"method": "Immediate",
+											"visible": true
+										}
+								}
+							]
+					},
+					{
+						"actor_id": "DoorSwing_03",
+						"components": 
+							[
+								{
+									"type": "volume_trigger",
+									"volume_data": 
+										[
+											{
+												"collision_type": "box",
+												"center": 
+													[
+														-2.23566031,
+														0.954,
+														-2.47653151
+													],
+												"extents": 
+													[
+														5.833556,
+														2.45232987,
+														4.26123428
+													],
+												"rotation": 
+													[
+														0,
+														0,
+														0
+													]
+											}
+										],
+									"trigger_type": "local"
+								},
+								{
+									"type": "net_actor_node",
+									"inputs": 
+										[
+											{
+												"input_port": "on",
+												"actions": 
+													[
+														{
+															"a": "model_animation",
+															"r": 
+																[
+																	0,
+																	0,
+																	0
+																],
+															"o": 
+																[
+																	0,
+																	0,
+																	0
+																],
+															"uid": "local",
+															"p": 
+																{
+																	"name": "DoorSwing_03_On",
+																	"wrap_mode": "once",
+																	"switch_method": "queue",
+																	"wait_method": "none"
+																}
+														}
+													]
+											},
+											{
+												"input_port": "off",
+												"actions": 
+													[
+														{
+															"a": "model_animation",
+															"r": 
+																[
+																	0,
+																	0,
+																	0
+																],
+															"o": 
+																[
+																	0,
+																	0,
+																	0
+																],
+															"uid": "local",
+															"p": 
+																{
+																	"name": "DoorSwing_03_Off",
+																	"wrap_mode": "once",
+																	"switch_method": "queue",
+																	"wait_method": "none"
+																}
+														}
+													]
+											}
+										],
+									"outputs": 
+										[
+											{
+												"output_port": "volume_trigger_enter_first",
+												"cooldown": 2,
+												"output_port_data": 
+													[
+														{
+															"type": "local_wiring",
+															"actor_id": "DoorSwing_03",
+															"input_port": "on"
+														}
+													],
+												"restricted_types": 
+													[
+														"avakin",
+														"petkin"
+													]
+											},
+											{
+												"output_port": "volume_trigger_exit_all",
+												"cooldown": 2,
+												"output_port_data": 
+													[
+														{
+															"type": "local_wiring",
+															"actor_id": "DoorSwing_03",
+															"input_port": "off"
+														}
+													],
+												"restricted_types": 
+													[
+														"avakin",
+														"petkin"
+													]
+											}
+										]
+								},
+								{
+									"type": "model",
+									"version": 1,
+									"game_asset_url": "sceneref://AlwaysOn/Nodes/DoorsTriggers/DoorSwing_03",
+									"edit_apartment_animation": "DoorSwing_03_On",
+									"idle_animation": "DoorSwing_03_Off",
+									"idle_wrap_mode": "last_frame"
+								}
+							],
+						"actions": 
+							[
+								{
+									"a": "position",
+									"o": 
+										[
+											0,
+											0,
+											0
+										],
+									"uid": "local"
+								},
+								{
+									"a": "model_set_visible",
+									"uid": "local",
+									"p": 
+										{
+											"method": "Immediate",
+											"visible": true
+										}
+								}
+							]
+					},
+					{
+						"actor_id": "DoorSwing_01",
+						"components": 
+							[
+								{
+									"type": "volume_trigger",
+									"volume_data": 
+										[
+											{
+												"collision_type": "box",
+												"center": 
+													[
+														-2.989834,
+														3.94,
+														-2.15609336
+													],
+												"extents": 
+													[
+														5.29385233,
+														2.45232987,
+														4.104491
+													],
+												"rotation": 
+													[
+														0,
+														0,
+														0
+													]
+											}
+										],
+									"trigger_type": "local"
+								},
+								{
+									"type": "net_actor_node",
+									"inputs": 
+										[
+											{
+												"input_port": "on",
+												"actions": 
+													[
+														{
+															"a": "model_animation",
+															"r": 
+																[
+																	0,
+																	0,
+																	0
+																],
+															"o": 
+																[
+																	0,
+																	0,
+																	0
+																],
+															"uid": "local",
+															"p": 
+																{
+																	"name": "DoorSwing_01_On",
+																	"wrap_mode": "once",
+																	"switch_method": "queue",
+																	"wait_method": "none"
+																}
+														}
+													]
+											},
+											{
+												"input_port": "off",
+												"actions": 
+													[
+														{
+															"a": "model_animation",
+															"r": 
+																[
+																	0,
+																	0,
+																	0
+																],
+															"o": 
+																[
+																	0,
+																	0,
+																	0
+																],
+															"uid": "local",
+															"p": 
+																{
+																	"name": "DoorSwing_01_Off",
+																	"wrap_mode": "once",
+																	"switch_method": "queue",
+																	"wait_method": "none"
+																}
+														}
+													]
+											}
+										],
+									"outputs": 
+										[
+											{
+												"output_port": "volume_trigger_enter_first",
+												"cooldown": 2,
+												"output_port_data": 
+													[
+														{
+															"type": "local_wiring",
+															"actor_id": "DoorSwing_01",
+															"input_port": "on"
+														}
+													],
+												"restricted_types": 
+													[
+														"avakin",
+														"petkin"
+													]
+											},
+											{
+												"output_port": "volume_trigger_exit_all",
+												"cooldown": 2,
+												"output_port_data": 
+													[
+														{
+															"type": "local_wiring",
+															"actor_id": "DoorSwing_01",
+															"input_port": "off"
+														}
+													],
+												"restricted_types": 
+													[
+														"avakin",
+														"petkin"
+													]
+											}
+										]
+								},
+								{
+									"type": "model",
+									"version": 1,
+									"game_asset_url": "sceneref://AlwaysOn/Nodes/DoorsTriggers/DoorSwing_01",
+									"edit_apartment_animation": "DoorSwing_01_On",
+									"idle_animation": "DoorSwing_01_Off",
+									"idle_wrap_mode": "last_frame"
+								}
+							],
+						"actions": 
+							[
+								{
+									"a": "position",
+									"o": 
+										[
+											0,
+											0,
+											0
+										],
+									"uid": "local"
+								},
+								{
+									"a": "model_set_visible",
+									"uid": "local",
+									"p": 
+										{
+											"method": "Immediate",
+											"visible": true
+										}
+								}
+							]
+					},
+					{
+						"actor_id": "Shower",
+						"components": 
+							[
+								{
+									"type": "volume_trigger",
+									"volume_data": 
+										[
+											{
+												"collision_type": "box",
+												"center": 
+													[
+														-0.133816719,
+														-0.64489603,
+														-0.08519173
+													],
+												"extents": 
+													[
+														1.15913773,
+														2.58518338,
+														1.05846453
+													],
+												"rotation": 
+													[
+														0,
+														270,
+														0
+													]
+											}
+										],
+									"trigger_type": "local"
+								},
+								{
+									"type": "net_actor_node",
+									"inputs": 
+										[
+											{
+												"input_port": "on",
+												"actions": 
+													[
+														{
+															"a": "model_animation",
+															"r": 
+																[
+																	0,
+																	0,
+																	0
+																],
+															"o": 
+																[
+																	0,
+																	0,
+																	0
+																],
+															"uid": "local",
+															"p": 
+																{
+																	"name": "Shower_On",
+																	"wrap_mode": "once",
+																	"switch_method": "queue",
+																	"wait_method": "none"
+																}
+														}
+													]
+											},
+											{
+												"input_port": "off",
+												"actions": 
+													[
+														{
+															"a": "model_animation",
+															"r": 
+																[
+																	0,
+																	0,
+																	0
+																],
+															"o": 
+																[
+																	0,
+																	0,
+																	0
+																],
+															"uid": "local",
+															"p": 
+																{
+																	"name": "Shower_Off",
+																	"wrap_mode": "once",
+																	"switch_method": "queue",
+																	"wait_method": "none"
+																}
+														}
+													]
+											}
+										],
+									"outputs": 
+										[
+											{
+												"output_port": "volume_trigger_enter_first",
+												"cooldown": 2,
+												"output_port_data": 
+													[
+														{
+															"type": "local_wiring",
+															"actor_id": "Shower",
+															"input_port": "on"
+														}
+													],
+												"restricted_types": 
+													[
+														"avakin",
+														"petkin"
+													]
+											},
+											{
+												"output_port": "volume_trigger_exit_all",
+												"cooldown": 2,
+												"output_port_data": 
+													[
+														{
+															"type": "local_wiring",
+															"actor_id": "Shower",
+															"input_port": "off"
+														}
+													],
+												"restricted_types": 
+													[
+														"avakin",
+														"petkin"
+													]
+											}
+										]
+								},
+								{
+									"type": "model",
+									"version": 1,
+									"game_asset_url": "sceneref://AlwaysOn/ParticlesAllRio/Shower Particles/Shower Exterior (1)/Shower",
+									"edit_apartment_animation": "Shower_On",
+									"idle_animation": "Shower_Off",
+									"idle_wrap_mode": "last_frame"
+								}
+							],
+						"actions": 
+							[
+								{
+									"a": "position",
+									"o": 
+										[
+											-11.83849,
+											1.743,
+											27.113
+										],
+									"uid": "local"
+								},
+								{
+									"a": "model_set_visible",
+									"uid": "local",
+									"p": 
+										{
+											"method": "Immediate",
+											"visible": true
+										}
+								}
+							]
+					},
+					{
+						"actor_id": "Shower2",
+						"components": 
+							[
+								{
+									"type": "volume_trigger",
+									"volume_data": 
+										[
+											{
+												"collision_type": "box",
+												"center": 
+													[
+														-0.133816719,
+														-0.64489603,
+														-0.117788315
+													],
+												"extents": 
+													[
+														1.00548053,
+														2.58518338,
+														1.05846453
+													],
+												"rotation": 
+													[
+														0,
+														270,
+														0
+													]
+											}
+										],
+									"trigger_type": "local"
+								},
+								{
+									"type": "net_actor_node",
+									"inputs": 
+										[
+											{
+												"input_port": "on",
+												"actions": 
+													[
+														{
+															"a": "model_animation",
+															"r": 
+																[
+																	0,
+																	0,
+																	0
+																],
+															"o": 
+																[
+																	0,
+																	0,
+																	0
+																],
+															"uid": "local",
+															"p": 
+																{
+																	"name": "Shower2_On",
+																	"wrap_mode": "once",
+																	"switch_method": "queue",
+																	"wait_method": "none"
+																}
+														}
+													]
+											},
+											{
+												"input_port": "off",
+												"actions": 
+													[
+														{
+															"a": "model_animation",
+															"r": 
+																[
+																	0,
+																	0,
+																	0
+																],
+															"o": 
+																[
+																	0,
+																	0,
+																	0
+																],
+															"uid": "local",
+															"p": 
+																{
+																	"name": "Shower2_Off",
+																	"wrap_mode": "once",
+																	"switch_method": "queue",
+																	"wait_method": "none"
+																}
+														}
+													]
+											}
+										],
+									"outputs": 
+										[
+											{
+												"output_port": "volume_trigger_enter_first",
+												"cooldown": 2,
+												"output_port_data": 
+													[
+														{
+															"type": "local_wiring",
+															"actor_id": "Shower2",
+															"input_port": "on"
+														}
+													],
+												"restricted_types": 
+													[
+														"avakin",
+														"petkin"
+													]
+											},
+											{
+												"output_port": "volume_trigger_exit_all",
+												"cooldown": 2,
+												"output_port_data": 
+													[
+														{
+															"type": "local_wiring",
+															"actor_id": "Shower2",
+															"input_port": "off"
+														}
+													],
+												"restricted_types": 
+													[
+														"avakin",
+														"petkin"
+													]
+											}
+										]
+								},
+								{
+									"type": "model",
+									"version": 1,
+									"game_asset_url": "sceneref://AlwaysOn/ParticlesAllRio/Shower Particles/Shower Exterior/Shower2",
+									"edit_apartment_animation": "Shower2_On",
+									"idle_animation": "Shower2_Off",
+									"idle_wrap_mode": "last_frame"
+								}
+							],
+						"actions": 
+							[
+								{
+									"a": "position",
+									"o": 
+										[
+											-13.433,
+											1.743,
+											27.113
+										],
+									"uid": "local"
+								},
+								{
+									"a": "model_set_visible",
+									"uid": "local",
+									"p": 
+										{
+											"method": "Immediate",
+											"visible": true
+										}
+								}
+							]
+					},
+					{
+						"actor_id": "Shower3",
+						"components": 
+							[
+								{
+									"type": "volume_trigger",
+									"volume_data": 
+										[
+											{
+												"collision_type": "box",
+												"center": 
+													[
+														0.238325119,
+														-0.644895554,
+														-0.1338166
+													],
+												"extents": 
+													[
+														1.24655473,
+														2.58518338,
+														1.05846453
+													],
+												"rotation": 
+													[
+														0,
+														180.000183,
+														0
+													]
+											}
+										],
+									"trigger_type": "local"
+								},
+								{
+									"type": "net_actor_node",
+									"inputs": 
+										[
+											{
+												"input_port": "on",
+												"actions": 
+													[
+														{
+															"a": "model_animation",
+															"r": 
+																[
+																	0,
+																	0,
+																	0
+																],
+															"o": 
+																[
+																	0,
+																	0,
+																	0
+																],
+															"uid": "local",
+															"p": 
+																{
+																	"name": "Shower3_On",
+																	"wrap_mode": "once",
+																	"switch_method": "queue",
+																	"wait_method": "none"
+																}
+														}
+													]
+											},
+											{
+												"input_port": "off",
+												"actions": 
+													[
+														{
+															"a": "model_animation",
+															"r": 
+																[
+																	0,
+																	0,
+																	0
+																],
+															"o": 
+																[
+																	0,
+																	0,
+																	0
+																],
+															"uid": "local",
+															"p": 
+																{
+																	"name": "Shower3_Off",
+																	"wrap_mode": "once",
+																	"switch_method": "queue",
+																	"wait_method": "none"
+																}
+														}
+													]
+											}
+										],
+									"outputs": 
+										[
+											{
+												"output_port": "volume_trigger_enter_first",
+												"cooldown": 2,
+												"output_port_data": 
+													[
+														{
+															"type": "local_wiring",
+															"actor_id": "Shower3",
+															"input_port": "on"
+														}
+													],
+												"restricted_types": 
+													[
+														"avakin",
+														"petkin"
+													]
+											},
+											{
+												"output_port": "volume_trigger_exit_all",
+												"cooldown": 2,
+												"output_port_data": 
+													[
+														{
+															"type": "local_wiring",
+															"actor_id": "Shower3",
+															"input_port": "off"
+														}
+													],
+												"restricted_types": 
+													[
+														"avakin",
+														"petkin"
+													]
+											}
+										]
+								},
+								{
+									"type": "model",
+									"version": 1,
+									"game_asset_url": "sceneref://AlwaysOn/ParticlesAllRio/Shower Particles/Shower Interior/Shower3",
+									"edit_apartment_animation": "Shower3_On",
+									"idle_animation": "Shower3_Off",
+									"idle_wrap_mode": "last_frame"
+								}
+							],
+						"actions": 
+							[
+								{
+									"a": "position",
+									"o": 
+										[
+											-8.685,
+											4.745,
+											1.41
+										],
+									"uid": "local"
+								},
+								{
+									"a": "model_set_visible",
+									"uid": "local",
+									"p": 
+										{
+											"method": "Immediate",
+											"visible": true
+										}
+								}
+							]
+					}
+				]
+		},
+	"rooms": 
+		[
+			{},
+			{},
+			{}
+		]
+}
